@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+header {
+  background-color: #232323;
+
+  .content {
+    color: white;
+    text-transform: uppercase;
+    padding: 60px 50px;
+    letter-spacing: 2px;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    h3 {
+      font-weight: 300;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    h1 {
+      font-weight: 300;
+      font-size: 22px;
+
+      b {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+section {
+  padding: 10px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .intro {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    padding: 30px 0 30px 0;
+  }
+
+  .question nav {
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+
+    ul li {
+      display: inline-block;
+      margin-right: 35px;
+      padding-bottom: 7px;
+
+      &:first-child {
+        a {
+          font-weight: 700;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+section.discussion {
+  margin: 25px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .content {
+    width: 100%;
+    background-color: #F4F4F4;
+    border: 1px solid #5169B4;
+    margin: 0 auto;
+
+    h3 {
+      margin: 30px 30px 0 45px;
+    }
+
+    article {
+      width: 33%;
+      padding: 30px 45px;
+      display: inline-block;
+      box-sizing: border-box;
+
+      h4 {
+        text-transform: uppercase;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      span.author {
+        margin-top: 10px;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+section.video {
+  .video {
+    margin-top: 30px;
+    background-color: #232323;
+    height: 300px;
+
+    h1 {
+      line-height: 300px;
+      color: white;
+      font-weight: 900;
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+}
+
+section.overheard {
+  .quotes {
+    width: 100%;
+    background-color: #F4F4F4;
+    padding-bottom: 30px;
+
+    h3 {
+      padding: 30px 0 0 45px;
+    }
+
+    blockquote {
+      padding: 30px 30px 0 45px;
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      h6 {
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #232323;
+  min-height: 100px;
+  margin-top: 40px;
+
+  .content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
