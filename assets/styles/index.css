@@ -29,27 +29,33 @@ header {
 section {
   padding: 10px 50px;
   max-width: 1000px;
-  margin: 0 auto; }
+  margin: 50px auto 50px auto; }
   section .intro {
     -webkit-column-count: 3;
     -moz-column-count: 3;
-    column-count: 3;
-    padding: 30px 0 30px 0; }
-  section .question nav {
-    margin-top: 20px;
-    border-bottom: 1px solid black; }
-    section .question nav ul li {
-      display: inline-block;
-      margin-right: 35px;
-      padding-bottom: 7px; }
-      section .question nav ul li:first-child a {
-        font-weight: 700; }
-      section .question nav ul li a {
-        text-decoration: none;
-        color: black; }
+    column-count: 3; }
+  section .question {
+    margin: 0; }
+    section .question nav {
+      margin-top: 20px;
+      border-bottom: 1px solid black; }
+      section .question nav ul li {
+        display: inline-block;
+        margin-right: 35px;
+        padding-bottom: 7px; }
+        section .question nav ul li a {
+          text-decoration: none;
+          color: black; }
+          section .question nav ul li a.active {
+            font-weight: 700; }
+    section .question .chart {
+      display: none;
+      margin-top: 15px;
+      min-height: 250px; }
+      section .question .chart.active {
+        display: block; }
 
 section.discussion {
-  margin: 25px 0;
   max-width: 1000px;
   margin: 0 auto; }
   section.discussion .content {
@@ -75,9 +81,9 @@ section.discussion {
 section.video .video {
   margin-top: 30px;
   background-color: #232323;
-  height: 300px; }
+  height: 400px; }
   section.video .video h1 {
-    line-height: 300px;
+    line-height: 400px;
     color: white;
     font-weight: 900;
     text-align: center;

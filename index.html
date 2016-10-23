@@ -25,14 +25,25 @@
         <h3>Whom do you support in the upcoming presidential election?</h3>
         <nav>
           <ul>
-            <li><a href=''>Students &amp; Faculty</a></li>
-            <li><a href=''>Students</a></li>
-            <li><a href=''>By Grade</a></li>
-            <li><a href=''>Faculty</a></li>
+            <li><a href='#students-faculty' class='active'>Students &amp; Faculty</a></li>
+            <li><a href='#students'>Students</a></li>
+            <li><a href='#grade'>By Grade</a></li>
+            <li><a href='#faculty'>Faculty</a></li>
           </ul>
         </nav>
-        <div class='chart'>
-
+        <div class='charts'>
+            <div class='chart active' id='students-faculty'>
+              students fact
+            </div>
+            <div class='chart' id='students'>
+              students
+            </div>
+            <div class='chart' id='grade'>
+              grade
+            </div>
+            <div class='chart' id='faculty'>
+              faculty
+            </div>
         </div>
       </div>
     </section>
@@ -66,13 +77,21 @@
       <div class='question'>
         <nav>
           <ul>
-            <li><a href=''>Students &amp; Faculty</a></li>
-            <li><a href=''>Students</a></li>
-            <li><a href=''>Faculty</a></li>
+            <li><a href='#students-faculty' class='active'>Students &amp; Faculty</a></li>
+            <li><a href='#students'>Students</a></li>
+            <li><a href='#faculty'>Faculty</a></li>
           </ul>
         </nav>
-        <div class='chart'>
-
+        <div class='charts'>
+          <div class='chart active' id='students-faculty'>
+            students fact
+          </div>
+          <div class='chart' id='students'>
+            students
+          </div>
+          <div class='chart' id='faculty'>
+            faculty
+          </div>
         </div>
       </div>
     </section>
@@ -86,8 +105,8 @@
       </div>
     </section>
     <footer>
-
     </footer>
-    <script src='js/scripts.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.3.min.js' integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=' crossorigin='anonymous'></script>
+    <script src='js/menu.js'></script>
   </body>
 </html>
