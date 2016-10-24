@@ -44,9 +44,23 @@ section {
   margin: 50px auto 50px auto;
 
   .intro {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
+    // -webkit-column-count: 3;
+    // -moz-column-count: 3;
+    // column-count: 3;
+
+    p {
+      margin-bottom: 25px;
+
+      &:first-child::first-letter {
+        float: left;
+        color: #001F3F;
+        font-size: 50px;
+        line-height: 30px;
+        padding-top: 4px;
+        padding-right: 4px;
+        font-family: Georgia;
+      }
+    }
   }
 
   .question {
@@ -99,7 +113,7 @@ section.discussion {
 
     article {
       width: 33%;
-      padding: 30px 45px;
+      padding: 30px 45px 45px 45px;
       display: inline-block;
       box-sizing: border-box;
 
@@ -171,5 +185,17 @@ footer {
   .content {
     max-width: 1000px;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width : 640px) {
+  section .intro {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+
+  section.discussion .content article {
+    width: 100%;
   }
 }
