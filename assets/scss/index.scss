@@ -73,7 +73,7 @@ header {
 
 section {
   max-width: 1000px;
-  padding: 40px 30px 20px 30px;
+  padding: 30px 0;
   margin: 0 auto;
 
   .intro {
@@ -222,6 +222,7 @@ section {
 section.discussion {
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 70px;
 
   .content {
     width: 100%;
@@ -272,6 +273,8 @@ section.discussion {
 }
 
 section.video {
+  padding-bottom: 80px;
+
   .video {
     margin-top: 30px;
     background-color: #232323;
@@ -288,6 +291,8 @@ section.video {
 }
 
 section.overheard {
+  padding-bottom: 60px;
+
   .quotes {
     width: 100%;
     background-color: #F4F4F4;
