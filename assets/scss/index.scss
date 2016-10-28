@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,,700');
 
 * {
   padding: 0;
@@ -14,14 +14,16 @@ body {
 main {
   width: 100%;
   background-color: white;
+  padding: 30px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 // p {
   span {
-    font-weight: 400;
-    background-color: lighten(#F4F4F4, 1);
-    padding: 3px 5px;
+    font-weight: 700;
+    // background-color: lighten(#F4F4F4, 1);
+    // padding: 3px 5px;
 
     &.blue {
       color: #27AAE1;
@@ -33,7 +35,7 @@ main {
       color: #38C66F;
     }
     &.yellow {
-      color: #FFD83C;
+      color: #F7C94E;
     }
   }
 // }
@@ -94,17 +96,19 @@ header {
 
 section {
   max-width: 1000px;
-  padding: 30px;
   margin: 0 auto;
 
   .intro {
     padding-top: 20px;
 
     .image {
+      background-color: #F4F4F4;
       width: 45%;
       float: left;
       display: block;
-      padding-right: 30px;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-right: 30px;
 
       img {
         display: block;
@@ -114,7 +118,6 @@ section {
       .credit {
         width: 100%;
         font-weight: 300;
-        background-color: white;
 
         h6 {
           text-align: right;
@@ -125,7 +128,7 @@ section {
         }
 
         h5 {
-          font-weight: 300;
+          font-weight: 400;
           line-height: 1.4;
           font-size: 15px;
         }
@@ -149,7 +152,8 @@ section {
   }
 
   .question {
-    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 
     h3 {
       font-size: 30px;
@@ -266,22 +270,58 @@ section {
         }
 
         &.students-popular {
-          background: linear-gradient(to right,  #27AAE1 0%,#27AAE1 76%,#FFD83C 76%,#FFD83C 82%,#38C66F 82%,#38C66F 86%,#ED2941 86%,#ED2941 100%);
+          background: linear-gradient(to right,  #27AAE1 0%,#27AAE1 73%,#FFD83C 73%,#FFD83C 80%,#38C66F 80%,#38C66F 85%,#ED2941 85%,#ED2941 100%);
         }
 
         &.faculty-popular {
-          background: linear-gradient(to right,  #27AAE1 0%,#27AAE1 76%,#FFD83C 76%,#FFD83C 82%,#38C66F 82%,#38C66F 86%,#ED2941 86%,#ED2941 100%);
+          background: linear-gradient(to right,  #27AAE1 0%,#27AAE1 94%,#FFD83C 94%,#FFD83C 96%,#ED2941 96%,#ED2941 100%);
         }
       }
 
       .credit {
         font-weight: 300;
 
-        p {
+        h6 {
           text-align: right;
           padding: 5px 0;
           color: #949494;
           font-size: 12px;
+          font-weight: 300;
+        }
+      }
+
+      .other-candidates {
+        overflow: auto;
+
+        h3 {
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 400;
+          display: inline;
+        }
+
+        h1 {
+          font-weight: 700;
+          font-size: 30px;
+          margin-right: 10px;
+          display: inline;
+        }
+
+        div {
+          width: 50%;
+          float: left;
+
+          &.johnson {
+            h1 {
+              color: #FFD83C;
+            }
+          }
+
+          &.stein {
+            h1 {
+              color: #38C66F;
+            }
+          }
         }
       }
     }
@@ -329,13 +369,16 @@ section.discussion {
         background-color: transparent;
         margin-bottom: 10px;
         display: block;
-        font-style: italic;
+        font-style: oblique;
+        font-weight: 400;
       }
 
       span.read {
+        background-color: transparent;
+
         a {
           text-decoration: none;
-          color: #27AAE1;
+          color: black;
         }
       }
     }
@@ -407,6 +450,11 @@ section.overheard {
         font-size: 16px;
         letter-spacing: 1.5px;
       }
+
+      i {
+        font-weight: 300;
+        font-size: 14px;
+      }
     }
   }
 }
@@ -435,12 +483,12 @@ footer {
     padding-bottom: 0;
   }
 
-  .question {
-    padding-top: 10px;
-    margin-bottom: -80px;
+  section .intro .question {
+    margin-top: -10px;
+    margin-bottom: 10px;
   }
 
-  .candidate .text {
+  .candidate .text, .other-candidates {
     h3 {
       font-size: 14px !important;
     }
@@ -454,9 +502,9 @@ footer {
   .head-container {
     display: none;
   }
-  .question {
-    padding-top: 10px;
-    margin-bottom: -80px;
+  section .intro .question{
+    padding-top: 20px;
+    margin-bottom: 10px;
   }
   section .question .pane .credit p {
     display: none;

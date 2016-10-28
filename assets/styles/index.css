@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,,700");
 * {
   padding: 0;
   margin: 0; }
@@ -11,12 +11,12 @@ body {
 main {
   width: 100%;
   background-color: white;
-  padding-bottom: 40px; }
+  padding: 30px;
+  padding-bottom: 40px;
+  box-sizing: border-box; }
 
 span {
-  font-weight: 400;
-  background-color: #f7f7f7;
-  padding: 3px 5px; }
+  font-weight: 700; }
   span.blue {
     color: #27AAE1; }
   span.red {
@@ -24,7 +24,7 @@ span {
   span.green {
     color: #38C66F; }
   span.yellow {
-    color: #FFD83C; }
+    color: #F7C94E; }
 
 header {
   background-color: #232323;
@@ -67,22 +67,23 @@ header {
 
 section {
   max-width: 1000px;
-  padding: 30px;
   margin: 0 auto; }
   section .intro {
     padding-top: 20px; }
     section .intro .image {
+      background-color: #F4F4F4;
       width: 45%;
       float: left;
       display: block;
-      padding-right: 30px; }
+      padding: 20px;
+      box-sizing: border-box;
+      margin-right: 30px; }
       section .intro .image img {
         display: block;
         width: 100%; }
       section .intro .image .credit {
         width: 100%;
-        font-weight: 300;
-        background-color: white; }
+        font-weight: 300; }
         section .intro .image .credit h6 {
           text-align: right;
           padding: 5px 0 5px 20px;
@@ -90,7 +91,7 @@ section {
           font-weight: 300;
           font-size: 12px; }
         section .intro .image .credit h5 {
-          font-weight: 300;
+          font-weight: 400;
           line-height: 1.4;
           font-size: 15px; }
     section .intro p {
@@ -105,7 +106,8 @@ section {
         font-weight: 700;
         padding: 25px 10px 10px 0; }
   section .question {
-    margin: 0; }
+    margin-top: 30px;
+    margin-bottom: 10px; }
     section .question h3 {
       font-size: 30px;
       text-transform: none; }
@@ -173,16 +175,36 @@ section {
         section .question .pane .bar.student-faculty-popular {
           background: linear-gradient(to right, #27AAE1 0%, #27AAE1 76%, #FFD83C 76%, #FFD83C 82%, #38C66F 82%, #38C66F 86%, #ED2941 86%, #ED2941 100%); }
         section .question .pane .bar.students-popular {
-          background: linear-gradient(to right, #27AAE1 0%, #27AAE1 76%, #FFD83C 76%, #FFD83C 82%, #38C66F 82%, #38C66F 86%, #ED2941 86%, #ED2941 100%); }
+          background: linear-gradient(to right, #27AAE1 0%, #27AAE1 73%, #FFD83C 73%, #FFD83C 80%, #38C66F 80%, #38C66F 85%, #ED2941 85%, #ED2941 100%); }
         section .question .pane .bar.faculty-popular {
-          background: linear-gradient(to right, #27AAE1 0%, #27AAE1 76%, #FFD83C 76%, #FFD83C 82%, #38C66F 82%, #38C66F 86%, #ED2941 86%, #ED2941 100%); }
+          background: linear-gradient(to right, #27AAE1 0%, #27AAE1 94%, #FFD83C 94%, #FFD83C 96%, #ED2941 96%, #ED2941 100%); }
       section .question .pane .credit {
         font-weight: 300; }
-        section .question .pane .credit p {
+        section .question .pane .credit h6 {
           text-align: right;
           padding: 5px 0;
           color: #949494;
-          font-size: 12px; }
+          font-size: 12px;
+          font-weight: 300; }
+      section .question .pane .other-candidates {
+        overflow: auto; }
+        section .question .pane .other-candidates h3 {
+          font-size: 15px;
+          text-transform: uppercase;
+          font-weight: 400;
+          display: inline; }
+        section .question .pane .other-candidates h1 {
+          font-weight: 700;
+          font-size: 30px;
+          margin-right: 10px;
+          display: inline; }
+        section .question .pane .other-candidates div {
+          width: 50%;
+          float: left; }
+          section .question .pane .other-candidates div.johnson h1 {
+            color: #FFD83C; }
+          section .question .pane .other-candidates div.stein h1 {
+            color: #38C66F; }
 
 section.discussion {
   max-width: 1000px;
@@ -215,10 +237,13 @@ section.discussion {
         background-color: transparent;
         margin-bottom: 10px;
         display: block;
-        font-style: italic; }
-      section.discussion .content article span.read a {
-        text-decoration: none;
-        color: #27AAE1; }
+        font-style: oblique;
+        font-weight: 400; }
+      section.discussion .content article span.read {
+        background-color: transparent; }
+        section.discussion .content article span.read a {
+          text-decoration: none;
+          color: black; }
 
 section.video {
   padding-bottom: 80px; }
@@ -264,6 +289,9 @@ section.overheard {
         text-transform: uppercase;
         font-size: 16px;
         letter-spacing: 1.5px; }
+      section.overheard .quotes blockquote i {
+        font-weight: 300;
+        font-size: 14px; }
 
 h3 {
   text-transform: uppercase;
@@ -283,21 +311,21 @@ footer {
   section:first-child {
     padding-bottom: 0; }
 
-  .question {
-    padding-top: 10px;
-    margin-bottom: -80px; }
+  section .intro .question {
+    margin-top: -10px;
+    margin-bottom: 10px; }
 
-  .candidate .text h3 {
+  .candidate .text h3, .other-candidates h3 {
     font-size: 14px !important; }
-  .candidate .text h1 {
+  .candidate .text h1, .other-candidates h1 {
     font-size: 30px !important; } }
 @media only screen and (max-width: 730px) {
   .head-container {
     display: none; }
 
-  .question {
-    padding-top: 10px;
-    margin-bottom: -80px; }
+  section .intro .question {
+    padding-top: 20px;
+    margin-bottom: 10px; }
 
   section .question .pane .credit p {
     display: none; } }
