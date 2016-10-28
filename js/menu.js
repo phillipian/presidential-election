@@ -18,46 +18,38 @@ $(function() {
     $($links).removeClass('active');
     $(this).addClass('active');
 
+    var clinton = 0;
+    var trump = 0;
+    var stein = 0;
+    var johnson = 0;
+
+    $('.bar').removeClass().addClass('bar');
+
     if (selected === "#students-faculty") {
-      var clinton = 76;
-      var trump = 13;
-      var stein = 6;
-      var johnson = 4;
-      $('.candidate.clinton .text h1').text(`${clinton}%`);
-      $('.candidate.trump .text h1').text(`${trump}%`);
-      $('.other-candidates .stein h1').text(`${stein}%`);
-      $('.other-candidates .johnson h1').text(`${johnson}%`);
-      $('.bar').removeClass().addClass('bar');
+      clinton = 76;
+      trump = 13;
+      stein = 6;
+      johnson = 4;
       $('.bar').addClass('student-faculty-popular');
     }
     else if (selected === "#students") {
-      var clinton = 73;
-      var trump = 15;
-      var stein = 5;
-      var johnson = 7;
-      $('.candidate.clinton .text h1').text(`${clinton}%`);
-      $('.candidate.trump .text h1').text(`${trump}%`);
-      $('.other-candidates .stein h1').text(`${stein}%`);
-      $('.other-candidates .johnson h1').text(`${johnson}%`);
-      $('.bar').removeClass().addClass('bar');
+      clinton = 73;
+      trump = 15;
+      stein = 5;
+      johnson = 7;
       $('.bar').addClass('students-popular');
     }
     else if (selected === "#faculty") {
-      var clinton = 94;
-      var trump = 4;
-      var stein = 0;
-      var johnson = 2;
-      $('.candidate.clinton .text h1').text(`${clinton}%`);
-      $('.candidate.trump .text h1').text(`${trump}%`);
-      $('.other-candidates .stein h1').text(`${stein}%`);
-      $('.other-candidates .johnson h1').text(`${johnson}%`);
-      $('.bar').removeClass().addClass('bar');
+      clinton = 94;
+      trump = 4;
+      stein = 0;
+      johnson = 2;
       $('.bar').addClass('faculty-popular');
     }
-    //
-    // var $charts = $(this).parent().parent().parent().parent().find('.panes div');
-    // $charts.removeClass('active');
-    // var $theChart = $(this).parent().parent().parent().parent().find('.panes '+selected);
-    // $theChart.addClass('active');
+
+    $('.candidate.clinton .text h1').text(clinton+'%');
+    $('.candidate.trump .text h1').text(trump+'%');
+    $('.other-candidates .stein h1').text(stein+'%');
+    $('.other-candidates .johnson h1').text(johnson+'%');
   });
 });
