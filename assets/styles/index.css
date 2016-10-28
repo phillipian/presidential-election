@@ -6,7 +6,7 @@
 body {
   font-family: 'Lato', sans-serif;
   color: black;
-  background-color: #232323; }
+  background-color: #09334F; }
 
 main {
   width: 100%;
@@ -27,43 +27,59 @@ span {
     color: #F7C94E; }
 
 header {
-  background-color: #232323;
-  background: url("../images/flag.png");
+  background: url("../images/flag-opaque.png");
   background-size: cover;
   background-position: center center; }
   header .content {
     text-transform: uppercase;
-    padding: 130px 50px 140px 50px;
+    padding: 130px 50px;
     letter-spacing: 2px;
     max-width: 1000px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    color: white; }
+    header .content img {
+      float: left;
+      display: block;
+      height: 150px; }
     header .content h3 {
       font-weight: 300;
       font-size: 20px;
-      background-color: white;
       display: table;
-      padding: 15px 20px;
+      padding: 5px 20px;
       margin-bottom: 10px; }
       header .content h3 i {
         font-weight: 300;
         font-style: oblique; }
     header .content h1 {
       font-weight: 300;
-      padding: 15px 20px;
-      background-color: white;
+      padding: 5px 20px;
       display: inline-block;
-      font-size: 24px; }
+      font-size: 28px; }
       header .content h1 b {
         font-weight: 700; }
   header .credit {
-    width: 100vw;
+    max-width: 100vw;
     font-weight: 300;
-    background-color: white; }
+    background-color: white;
+    box-sizing: border-box; }
     header .credit p {
       text-align: right;
       padding: 5px 20px;
       color: #949494;
       font-size: 12px; }
+
+section.graphs .credit, section.video .credit {
+  font-weight: 300;
+  background-color: white;
+  margin-bottom: 40px; }
+  section.graphs .credit p, section.video .credit p {
+    text-align: right;
+    padding: 5px 0 5px 20px;
+    color: #949494;
+    font-size: 12px; }
+
+section.video p {
+  padding-bottom: 80px; }
 
 section {
   max-width: 1000px;
@@ -107,7 +123,7 @@ section {
         padding: 25px 10px 10px 0; }
   section .question {
     margin-top: 30px;
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
     section .question h3 {
       font-size: 30px;
       text-transform: none; }
@@ -245,18 +261,16 @@ section.discussion {
           text-decoration: none;
           color: black; }
 
-section.video {
-  padding-bottom: 80px; }
-  section.video .video {
-    margin-top: 30px;
-    background-color: #232323;
-    height: 400px; }
-    section.video .video h1 {
-      line-height: 400px;
-      color: white;
-      font-weight: 900;
-      text-align: center;
-      font-size: 40px; }
+section.video .video {
+  margin-top: 30px;
+  background-color: #232323;
+  height: 400px; }
+  section.video .video h1 {
+    line-height: 400px;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 40px; }
 
 section.picture {
   overflow: auto; }
@@ -298,15 +312,32 @@ h3 {
   font-weight: 400; }
 
 footer {
-  background-color: #232323;
-  min-height: 100px; }
+  min-height: 100px;
+  padding: 30px;
+  box-sizing: border-box; }
+  footer img {
+    height: 90px;
+    display: block;
+    margin: 0 auto; }
+  footer h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 400;
+    font-style: oblique; }
+  footer p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px; }
   footer .content {
     max-width: 1000px;
     margin: 0 auto; }
 
 section.graphs img {
-  width: 100%;
-  margin-bottom: 40px; }
+  width: 100%; }
 
 @media only screen and (max-width: 640px) {
   section.discussion .content article {
