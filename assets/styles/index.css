@@ -304,6 +304,10 @@ footer {
     max-width: 1000px;
     margin: 0 auto; }
 
+section.graphs img {
+  width: 100%;
+  margin-bottom: 40px; }
+
 @media only screen and (max-width: 640px) {
   section.discussion .content article {
     width: 100%; }
@@ -322,7 +326,10 @@ footer {
   .candidate .text h3, .other-candidates h3 {
     font-size: 14px !important; }
   .candidate .text h1, .other-candidates h1 {
-    font-size: 30px !important; } }
+    font-size: 30px !important; }
+
+  section.graphs img {
+    display: none; } }
 @media only screen and (max-width: 730px) {
   .head-container {
     display: none; }

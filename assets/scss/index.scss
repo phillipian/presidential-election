@@ -474,6 +474,13 @@ footer {
   }
 }
 
+section.graphs {
+  img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
 @media only screen and (max-width : 640px) {
   section.discussion .content article {
     width: 100%;
@@ -501,6 +508,13 @@ footer {
       font-size: 30px !important;
     }
   }
+
+  section.graphs {
+    img {
+      display: none;
+    }
+  }
+
 }
 
 @media only screen and (max-width : 730px) {
