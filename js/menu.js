@@ -19,8 +19,8 @@ $(function() {
     $(this).addClass('active');
 
     if (selected === "#students-faculty") {
-      var clinton = 95.3;
-      var trump = 4.7;
+      var clinton = 76;
+      var trump = 13;
       $('.candidate.clinton .text h1').text(`${clinton}%`);
       $('.candidate.trump .text h1').text(`${trump}%`);
       $('.bar').removeClass().addClass('bar');
