@@ -20,25 +20,25 @@ main {
 }
 
 // p {
-  span {
-    font-weight: 700;
-    // background-color: lighten(#0C334E, 70);
-    // background-color: lighten(#F4F4F4, 1);
-    // padding: 3px 5px;
-
-    &.blue {
-      color: #27AAE1;
-    }
-    &.red {
-      color: #ED2941;
-    }
-    &.green {
-      color: #38C66F;
-    }
-    &.yellow {
-      color: #F7C94E;
-    }
-  }
+  // span {
+  //   font-weight: 700;
+  //   // background-color: lighten(#0C334E, 70);
+  //   // background-color: lighten(#F4F4F4, 1);
+  //   // padding: 3px 5px;
+  //
+  //   &.blue {
+  //     color: #27AAE1;
+  //   }
+  //   &.red {
+  //     color: #ED2941;
+  //   }
+  //   &.green {
+  //     color: #38C66F;
+  //   }
+  //   &.yellow {
+  //     color: #F7C94E;
+  //   }
+  // }
 // }
 
 header {
@@ -81,7 +81,6 @@ header {
 
       b {
         font-weight: 700;
-        // color: #27AAE1;
       }
     }
   }
@@ -446,7 +445,6 @@ section.overheard {
     width: 100%;
     background-color: lighten(#232323, 40);
     padding-bottom: 30px;
-    // border: 1px dashed #232323;
     color: white;
 
     &.blue {
@@ -531,6 +529,9 @@ section.graphs {
 }
 
 @media only screen and (max-width : 640px) {
+  header .content {
+    padding: 20px inherit;
+  }
   section.discussion .content article {
     width: 100%;
   }
@@ -563,7 +564,6 @@ section.graphs {
       display: none;
     }
   }
-
 }
 
 @media only screen and (max-width : 730px) {

@@ -15,17 +15,6 @@ main {
   padding-bottom: 40px;
   box-sizing: border-box; }
 
-span {
-  font-weight: 700; }
-  span.blue {
-    color: #27AAE1; }
-  span.red {
-    color: #ED2941; }
-  span.green {
-    color: #38C66F; }
-  span.yellow {
-    color: #F7C94E; }
-
 header {
   background: url("../images/flag-opaque.png");
   background-size: cover;
@@ -340,6 +329,9 @@ section.graphs img {
   width: 100%; }
 
 @media only screen and (max-width: 640px) {
+  header .content {
+    padding: 20px inherit; }
+
   section.discussion .content article {
     width: 100%; }
 
