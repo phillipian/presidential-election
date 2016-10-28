@@ -315,6 +315,10 @@ footer {
     margin-top: -10px;
     margin-bottom: 10px; }
 
+  section .intro .image {
+    width: 100%;
+    margin-bottom: 20px; }
+
   .candidate .text h3, .other-candidates h3 {
     font-size: 14px !important; }
   .candidate .text h1, .other-candidates h1 {
