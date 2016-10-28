@@ -21,8 +21,8 @@ $(function() {
     if (selected === "#students-faculty") {
       var clinton = 76;
       var trump = 13;
-      var stein = 73;
-      var johnson = 15;
+      var stein = 6;
+      var johnson = 4;
       $('.candidate.clinton .text h1').text(`${clinton}%`);
       $('.candidate.trump .text h1').text(`${trump}%`);
       $('.other-candidates .stein h1').text(`${stein}%`);
